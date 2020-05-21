@@ -1,8 +1,8 @@
 {
   "name": "Adventure-Foto",
   "short_name": "adventurefoto",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "orientation": "landscape",
   "display": "fullscreen",
   "scope": "/",
