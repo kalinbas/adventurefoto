@@ -3,9 +3,10 @@
   "short_name": "adventurefoto",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
+  "orientation": "landscape",
   "display": "fullscreen",
-  "scope": "/adventurefoto/",
-  "start_url": "/adventurefoto/",
+  "scope": "/",
+  "start_url": "/adventurefoto/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
