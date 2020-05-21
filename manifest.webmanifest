@@ -5,7 +5,7 @@
   "background_color": "#000000",
   "orientation": "landscape",
   "display": "fullscreen",
-  "scope": "/",
+  "scope": "/adventurefoto/",
   "start_url": "/adventurefoto/index.html",
   "icons": [
     {
