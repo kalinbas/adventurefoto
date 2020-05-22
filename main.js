@@ -6,12 +6,12 @@ const game = {
     deltaX: 0,
     deltaY: 0,
     scale: 1.0,
-    actions: { 
+    actions: {
         see: { text: 'Ver', prefix1: 'a', x: 50, xe: 120, default: 'Es un %1 normal.' },
         talk: { text: 'Hablar', prefix1: 'con', x: 130, xe: 240, default: 'No puedes hablar con %1' },
-        take : { text: 'Tomar', x: 250, xe: 360, default: 'No puedes tomar eso' },
-        move : { text: 'Mover', prefix1: 'a', x: 370, xe: 480, default: 'No puedes mover eso' },
-        use : { text: 'Usar', prefix2: 'con', x: 490, xe: 580, hasTwoObjects: true, default: 'No puedes usar eso asi' },
+        take: { text: 'Tomar', x: 250, xe: 360, default: 'No puedes tomar eso' },
+        move: { text: 'Mover', prefix1: 'a', x: 370, xe: 480, default: 'No puedes mover eso' },
+        use: { text: 'Usar', prefix2: 'con', x: 490, xe: 580, hasTwoObjects: true, default: 'No puedes usar eso asi' },
         give: { text: 'Dar', prefix2: 'a', x: 590, xe: 650, hasTwoObjects: true, default: 'No puedes darle eso a %2' },
     },
     state: {
@@ -22,12 +22,10 @@ const game = {
         item1: null,
         item2: null,
         dialog: null,
-        mouseOverInventory: null,
-        mouseOverAction: null,
-        mouseOverObject: null,
-        mouseOverAnswer: null,
+        mouseOver: {},
         message: null,
-        messagePosition: null
+        messageTime: null,
+        mode: 'start' // 'game', 'end'
     }
 }
 
@@ -130,3 +128,6 @@ function loadObjects() {
         game.state.objects[objectKey] = !object.hide
     }
 }
+
+
+screen.orientation.lock("landscape").catch(err => {})
